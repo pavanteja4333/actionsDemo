@@ -3,4 +3,8 @@ Hi This is file1
 
 This is the message after first commit
 
-this is after modifiting 
+this is after modifiting
+
+this is new line
+
+This is for amend 
