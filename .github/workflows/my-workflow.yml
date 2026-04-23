@@ -1,0 +1,24 @@
+
+name: My workflow 1
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: step1
+        run: echo Hello, world!
+
+      - name: step2
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
