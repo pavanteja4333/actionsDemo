@@ -2,8 +2,16 @@ name: practice-workflow
 
 on:
     push: 
-        branches: ["main"]
+        branches: 
+            main
+        branches-ignore: 
+            pavan
+
+            
     workflow_dispatch: 
+
+env:
+    my_name: pavan
 
 jobs:
     job1:
@@ -11,7 +19,7 @@ jobs:
 
         steps:
             - name: step1
-              run: pwd
-              
+              run: echo "hi im ${{env.my_name}}"
+
             - name: step2
               run: mvn install  
